@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description-->
+    
+        <meta name="description" content="Comics, Illustration, Design, Games">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Donna Almendrala">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Learning 3D Modeling: Week 3">
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Mad Macaques Press">
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content>
+    
+
+    <!-- Title -->
+    
+    <title>Learning 3D Modeling: Week 3 - Mad Macaques Press</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/sass/main.css">
+
+    <!--[if lt IE 8]>
+        <script src="/js/ie/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" href="/sass/ie8.css">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="/sass/ie9.css">
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Mad Macaques Press</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="https://store.madmacaques.com/">Store</a>
+            </li>
+        
+            <li>
+                <a href="/comics">Comics</a>
+            </li>
+        
+            <li>
+                <a href="/illustration">Illustration</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Learning 3D Modeling: Week 3</h1>
+
+
+    <span class="image main"><img src="/2016/11/08/Learning-3D-Modeling-Week-3/basic-book-model-week-3-index.png" alt="" /></span>
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>This week I learned how to create NURBS (non-uniform rational basis spline… just look it up). We’ve been working with creating with polygons up to this point, and our assignment was to model at least 4 things with NURBS. NURBS are basically planes that can be manipulated in the space to create shapes like cubes, spheres, cones, toruses, etc. and are also good for modeling curves and complex shapes with smooth surfaces.</p>
+<p>I decided to try to model the clasp and strap with NURBS. I imported this top-down <a href="https://ae01.alicdn.com/kf/HTB1GE1HJXXXXXb5XFXXq6xXFXXXT/10-font-b-Antique-b-font-font-b-Brass-b-font-Decorative-Hasp-Jewelry-Box-Hasp.jpg" target="_blank" rel="noopener">reference image</a> of the type of clasp I was imagining into Maya, and used a combination of the “CV curve” and “three-point arc” tools to draw the outlines of each part. Then I duplicated it, translated it up, and used the “Loft” function bridge the gap between the curves to create a lofted shape.</p>
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/clasp-loft.png" title="clasp loft">
+<p>Then I converted the NURBS immediately to polygons, deleted extraneous faces and added edge loops to make each component smooth.</p>
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/clasp-top.png" title="clasp top">
+<p>To make the strap, I created a curve that follows the profile of the strap I was imagining, and used the “extrude” function on a long and narrow rectangle following the path of that profile to look like a strap.</p>
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/strap-curves.png" title="strap curves">
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/clasp.png" title="clasp">
+<p>Now the fun part is going to be modeling the tentacley Cthulhu face on the cover similar to the reference. I may end up scrapping this part and starting over, but to start, I decided to use NURBS curves and extrude flat trapezoids along each curve to the make the tentacles. Seems like a promising beginning, but I need to figure out how to model the center skull shape so it’s more organic with eye sockets and bony ridges rather than this flat oval.</p>
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/cthulhu-polygons.png" title="cthulhu polygons">
+<img src="/2016/11/08/Learning-3D-Modeling-Week-3/cthulhu-smooth.png" title="cthulhu smooth">
+<p>It felt pretty good to work in Maya this week; I think I was breaking through some mental barriers as I encountered issues and tried to find solutions on the web. It feels better knowing that when you need help, someone else has already encountered that problem, and someone else has helped them out.</p>
+<p>Side note: I ended up liking working with NURBS a lot, but it crashed Maya on my mac like every couple of minutes.</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/Maya/" class="button small">Maya</a> <a href="/tags/Necronomicon/" class="button small">Necronomicon</a> <a href="/tags/3D/" class="button small">3D</a> <a href="/tags/book/" class="button small">book</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                Donna Almendrala is a Bay Area cartoonist who likes to draw apes, submarines and food, just to name a few. She is an avid proponent of board games and RPGs. She also specializes in illustration, web design and development, print production, and graphic design.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                    <li><a href="https://twitter.com/madmacaques?lang=en" class="icon style2 fa-twitter" target="_blank" ><span class="label">Twitter</span></a></li>
+                
+                
+                
+                    <li><a href="https://www.instagram.com/madmacaques" class="icon style2 fa-instagram" target="_blank" ><span class="label">Instagram</span></a></li>
+                
+                
+                
+                    <li><a href="https://github.com/donnasaur" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                    <li><a href="mailto:donna@madmacaques.com" class="icon style2 fa-envelope-o" target="_blank" ><span class="label">Email</span></a></li>
+                
+                
+                    <li><a href="\#" class="icon style2 fa-rss" target="_blank" ><span class="label">RSS</span></a></li>
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; 2017 Donna Almendrala. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            <li>Hexo: <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></li>
+        </ul>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- skel -->
+<script src="/js/skel.min.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/util.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script>
+<![endif]-->
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
